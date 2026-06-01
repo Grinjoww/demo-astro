@@ -1,0 +1,14 @@
+import { useState } from 'react';
+
+export default function BotonCita() {
+  const [citas, setCitas] = useState(0);
+  
+  return (
+    <button 
+      onClick={() => setCitas(citas + 1)} 
+      style={{ padding: '10px 20px', background: '#007bff', color: 'white', border: 'none', borderRadius: '5px', cursor: 'pointer', fontSize: '16px', fontWeight: 'bold' }}
+    >
+      Agendar Cita Médica (Citas hoy: {citas})
+    </button>
+  );
+}
