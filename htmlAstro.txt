@@ -1,7 +1,6 @@
 ---
 import BotonCita from '../components/BotonCita.jsx';
 
-// El servidor de Astro hace el fetch a la API. ¡Cero carga pesada para el cliente!
 const respuesta = await fetch('https://dog.ceo/api/breeds/image/random');
 const datosPerro = await respuesta.json();
 ---
